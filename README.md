@@ -30,7 +30,7 @@ jobs:
       - name: Build
         run: ./build.sh
       - name: Check release changes
-        uses: polytech-com/release-changes-action@v0.4
+        uses: polytech-com/release-changes-action@v1
         id: release
       - name: Upload to GitHub
         uses: softprops/action-gh-release@v1
