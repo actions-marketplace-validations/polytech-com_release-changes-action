@@ -1,6 +1,6 @@
-# Release Changes 
+# :rocket: Release Changes 
 
-GitHub Actions for checking changes between releases.
+:octocat: GitHub Actions for checking changes between releases.
 
 Changes are found by looking at new commits from the last tag on the workflow branch. This can be helpful for skipping upload of nightly builds etc. and an alternative to always uploading on push.
 
@@ -41,7 +41,7 @@ jobs:
 
 The following input values are supported and can be changed if needed.
 
-| Name | Description | Default value |
-| --- | --- | --- |
-| sha | The commit SHA that triggered the workflow run | ${{ github.sha }} |
-| ref_name | The branch or tag name that triggered the workflow run | ${{ github.ref_name }} |
+| Name | Type | Description | Default value |
+| --- | --- | --- | --- |
+| `sha` | `string` | The commit SHA that triggered the workflow run | `${{ github.sha }}` |
+| `ref_name` | `string` | The branch or tag name that triggered the workflow run | `${{ github.ref_name }}` |
