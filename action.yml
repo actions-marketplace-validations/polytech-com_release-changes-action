@@ -1,7 +1,7 @@
 name: "Release Changes"
 description: "GitHub Actions for checking changes between releases"
 branding:
-  icon: "wind"
+  icon: "tag"
   color: "orange"
 inputs:
   sha:
