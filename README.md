@@ -1,6 +1,8 @@
-# :rocket: Release Changes 
+# Release Changes
 
-:octocat: GitHub Actions for checking changes between releases.
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/polytech-com/release-changes-action) ![GitHub](https://img.shields.io/github/license/polytech-com/release-changes-action)
+
+GitHub Actions for checking changes between releases.
 
 Changes are found by looking at new commits from the last tag on the workflow branch. This can be helpful for skipping upload of nightly builds etc. and an alternative to always uploading on push.
 
