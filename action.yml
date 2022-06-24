@@ -1,11 +1,8 @@
-name: Release Changes Action
-description: |
-  Detects changes between releases by looking at new commits from the last tag on a given branch. This
-  can be helpful for skipping upload of nightly builds etc.
+name: "Release Changes"
+description: "GitHub Actions for checking changes between releases"
 branding:
-  icon: wind
-  color: orange
-author: Jeppe Frandsen
+  icon: "wind"
+  color: "orange"
 inputs:
   sha:
     description: "The commit SHA that triggered the workflow run"
@@ -20,7 +17,7 @@ outputs:
     description: "Indicates if there are changes from the last release"
     value: ${{ steps.run.outputs.changes }}
 runs:
-  using: 'composite'
+  using: "composite"
   steps:
     - id: run
       run: $GITHUB_ACTION_PATH/entrypoint.sh ${{ inputs.sha }} ${{ inputs.ref_name }}
