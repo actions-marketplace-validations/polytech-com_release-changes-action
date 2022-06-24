@@ -23,5 +23,5 @@ runs:
   using: 'composite'
   steps:
     - id: run
-      run: ${{ github.action_path }}/entrypoint.sh ${{ inputs.sha }} ${{ inputs.ref_name }}
+      run: $GITHUB_ACTION_PATH/entrypoint.sh ${{ inputs.sha }} ${{ inputs.ref_name }}
       shell: bash
