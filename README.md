@@ -1,8 +1,8 @@
 # Release Changes
 
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/polytech-com/release-changes-action) ![GitHub](https://img.shields.io/github/license/polytech-com/release-changes-action)
+![GitHub release](https://img.shields.io/github/v/release/polytech-com/release-changes-action) ![GitHub](https://img.shields.io/github/license/polytech-com/release-changes-action)
 
-GitHub Actions for checking changes between releases.
+*GitHub Actions for checking changes between releases.*
 
 Changes are found by looking at new commits from the last tag on the workflow branch. This can be helpful for skipping upload of nightly builds etc. and an alternative to always uploading on push.
 
@@ -43,7 +43,15 @@ jobs:
 
 The following input values are supported and can be changed if needed.
 
-| Name | Type | Description | Default value |
+| Name | Type | Description | Default |
 | --- | --- | --- | --- |
 | `sha` | `string` | The commit SHA that triggered the workflow run | `${{ github.sha }}` |
 | `ref_name` | `string` | The branch or tag name that triggered the workflow run | `${{ github.ref_name }}` |
+
+## Outputs
+
+The following outputs are supported.
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `changes` | `boolean` | Indicates if there are changes from the last release |
