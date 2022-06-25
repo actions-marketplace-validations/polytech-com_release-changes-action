@@ -18,4 +18,4 @@ else
   fi
 fi
 
-echo ::set-output name=latest::$RELEASE_LATEST
+echo ::set-output name=latest::"$RELEASE_LATEST"
