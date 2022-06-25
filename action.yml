@@ -2,7 +2,7 @@ name: "Release Changes"
 description: "GitHub Actions for checking changes between releases"
 branding:
   icon: "tag"
-  color: "orange"
+  color: "purple"
 inputs:
   sha:
     description: "The commit SHA that triggered the workflow run"

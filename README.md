@@ -4,7 +4,11 @@
 
 GitHub Actions for checking changes between releases.
 
-Changes are found by looking at new commits from the last tag on the workflow branch. This can be helpful for skipping upload of nightly builds etc. and an alternative to always uploading on push.
+<p align="center">
+  <img src="https://github.com/polytech-com/release-changes-action/raw/main/action.png" width="75%">
+</p>
+
+Changes are found by looking at new commits from the latest tag on the workflow branch. This can be helpful for skipping upload of sheduled builds etc. and an alternative to always upload on push.
 
 ## Usage
 
