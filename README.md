@@ -49,7 +49,7 @@ The following input values are supported and can be changed if needed.
 
 | Name | Type | Description | Default |
 | --- | --- | --- | --- |
-| `sha` | `string` | The commit SHA that triggered the workflow run | `${{ github.sha }}` |
+| `sha` | `string` | The commit SHA that triggered the workflow run | `${{ github.sha }}` |
 | `ref_name` | `string` | The branch or tag name that triggered the workflow run | `${{ github.ref_name }}` |
 
 ## Outputs
@@ -58,5 +58,5 @@ The following outputs are supported.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `changes` | `boolean` | Indicates if there are changes from the latest release |
+| `changes` | `boolean` | Indicates if there are changes from the latest release |
 | `latest` | `string` | The lastest release on the workflow branch |
