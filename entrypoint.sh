@@ -17,3 +17,5 @@ else
     echo ::set-output name=changes::false
   fi
 fi
+
+echo ::set-output name=latest::$RELEASE_LATEST

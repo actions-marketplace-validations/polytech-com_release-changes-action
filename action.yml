@@ -14,8 +14,11 @@ inputs:
     default: ${{ github.ref_name }}
 outputs:
   changes:
-    description: "Indicates if there are changes from the last release"
+    description: "Indicates if there are changes from the latest release"
     value: ${{ steps.run.outputs.changes }}
+  latest:
+    description: "The lastest release on the workflow branch"
+    value: ${{ steps.run.outputs.latest }}
 runs:
   using: "composite"
   steps:
