@@ -34,7 +34,7 @@ jobs:
       - name: Build
         run: ./build.sh
       - name: Check release changes
-        uses: polytech-com/release-changes-action@v1
+        uses: polytech-com/release-changes-action@v2
         id: release
       - name: Upload to GitHub
         uses: softprops/action-gh-release@v1
